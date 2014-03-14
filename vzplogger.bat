@@ -53,7 +53,7 @@ CALL :SUB_PROMPT
         ) ELSE IF "%stuff:~,4%"=="exit" (
         echo %ldate%-%ltime%-%tester%: %stuff% >> c:\assessment\%ldate%-%asset%-%test%-log.txt
         echo %ldate%-%ltime%-%tester%: %stuff% >> c:\assessment\%ldate%-%asset%-%test%-output.txt
-        del /f c:\assessment\tmp\*
+        del /f /q c:\assessment\tmp\*
         exit
         ) ELSE (
         echo %ldate%-%ltime%-%tester%: %stuff% >> c:\assessment\%ldate%-%asset%-%test%-log.txt
